@@ -18,7 +18,7 @@
 
     <title>Pablo Saavedra</title>
 </head>
-<body>
+<body id="top">
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
       <symbol id="circle-half" viewBox="0 0 16 16">
         <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
@@ -40,26 +40,32 @@
       </symbol>
     </svg>
     <div class="container">
-        <header class="bg-primary">
-            <nav class="navbar navbar-expand-sm" data-bs-theme="dark">
+        <header>
+            <nav class="navbar navbar-expand-sm bg-body fixed-top navbar-scroll" data-mdb-navbar-init>
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="assets/imgs/logo-white.png" alt="CUPPON" height="32" /></a>
+                    <a class="navbar-brand" href="#"><img src="assets/imgs/foto_cv.jpeg" alt="Logo" height="32" class="rounded-circle" /></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="collapsibleNavbar">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
+                            <a class="nav-link active" href="#top">Home</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#acerca">Acerca</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#">Exoeriencia</a>
+                            <a class="nav-link" href="#portafolio">Portafolio</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Disable</a>
+                            <a class="nav-link" href="#experiencia">Experiencia</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#educacion">Educación</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link disabled" href="#"> </a>
                             </li>
                         </ul>
 
@@ -145,121 +151,382 @@
                     </div>
                 </div>
             </nav>
+        
+        <!-- Background image -->
+        <div class="bg-image rounded-bottom shadow"
+            style="background: url('assets/imgs/bg.jpeg') no-repeat; background-position: bottom; background-size: cover; aspect-ratio: 16/9; width: 100%;">
+        </div>
+        <!-- Background image -->
+
         </header>
 
         <main>
             
-            
+
+
+            <!-- Section: Acerca -->
+            <div id="acerca"> </div>
+            <section id="acerca-sec" class="container text-center py-3 px-3">
+                <h2 class="display-3 fw-bold mb-2 mt-5">Acerca de mi</h2>
+                <p>
+                    <b class="fw-bold">Ingeniero Civil Eléctrico</b> con más de 12 años de experiencia en proyectos de <b class="fw-bold">automatización</b>, 
+                    <b class="fw-bold">robótica</b> y <b class="fw-bold">desarrollo de software de bajo nivel</b>. Encargado del proceso de diseño, instalación 
+                    y puesta en marcha en planta de los diferentes elementos eléctricos involucrados. Actualmente 
+                    estoy a cargo de la <b class="fw-bold">Gerencia del Área de Ingeniería</b> en la empresa.
+                </p>
+                <p>
+                    Me caracterizo por mi responsabilidad, trabajo en equipo y buen humor. Fuera del trabajo 
+                    y en mis tiempos libres me gusta realizar actividades físicas, específicamente andar en 
+                    bicicleta.
+                </p>
+
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <i class="fa fa-briefcase fa-3x my-3"></i>
+                        <h4 class="my-3 fw-bold">Trabajo</h3>
+                        <p class="my-3">
+                            Trabajo en une empresa de Automatización Industrial donde ofrecemnos
+                            servicios de instalación de sistemas automáticos a empresas de diversos
+                            ambitos. Dentro de nuestras ofertas está la automatización utlizando robots
+                            industriales.
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <i class="fas fa-laptop-code fa-3x my-3"></i>
+                        <h4 class="my-3 fw-bold">Programación</h3>
+                        <p class="my-3">
+                            Me gusta la tecnología y la programación. He participado en proyectos donde
+                            he utilizado lenguajes como Python, Java y C/C++. Especialmente he trabajado
+                            programando sistemas de inteligencia computacional y control utilizando
+                            PLCs.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <i class="fa fa-bicycle fa-3x my-3"></i>
+                        <h4 class="my-3 fw-bold">Ciclismo</h3>
+                        <p class="my-3">
+                            El ciclismo equilibra mi vida profesional: planificación de rutas y mecánica,
+                            resiliencia en ascensos y concentración en descensos. Me gusta el ciclismo por
+                            la sensación de libertad mientras disfruto de la naturaleza.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: Acerca -->
+
+
+
+            <!-- Section: Portafolio -->
+            <div id="portafolio" class="mb-5" style="height: 1rem;"> </div>
+            <section id="portafolio-sec" class="container shadow bg-body-tertiary rounded py-3 px-3">
+                <h3>Portafolio</h3>
+                <hr />
+
+                <div class="row">
+                    <div class="col-12 col-sm-4 py-2">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/imgs/web-1.png" />
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Web Personal</h5>
+                                <p class="card-text">
+                                    Landing page personal utilizando Bootstrap.
+                                    <br />
+                                    <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&amp;logoColor=white" alt="HTML5" style="max-width: 100%;">
+                                    <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&amp;logoColor=white" alt="CSS3" style="max-width: 100%;"> 
+                                    <img src="https://img.shields.io/badge/Bootstrap-563D7C?logo=bootstrap&amp;logoColor=white" alt="BOOTSTRAP" style="max-width: 100%;"> 
+                                </p>
+                                <button type="button" class="btn btn-outline-primary">
+                                    Ver más
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4 py-2">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/imgs/web-2.png" />
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Web Robótica</h5>
+                                <p class="card-text">
+                                    Pagina web de servicios de robótica.
+                                    <br />
+                                    <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&amp;logoColor=white" alt="HTML5" style="max-width: 100%;">
+                                    <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&amp;logoColor=white" alt="CSS3" style="max-width: 100%;">  
+                                </p>
+                                <button type="button" class="btn btn-outline-primary">
+                                    Ver más
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4 py-2">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/imgs/web-3.png" />
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Web Iguanas</h5>
+                                <p class="card-text">
+                                    Página web de iguanas utilizando Flex CSS.
+                                    <br />
+                                    <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&amp;logoColor=white" alt="HTML5" style="max-width: 100%;">
+                                    <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&amp;logoColor=white" alt="CSS3" style="max-width: 100%;"> 
+                                </p>
+                                <button type="button" class="btn btn-outline-primary">
+                                    Ver más
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
 
             <!-- Section: Experiencia -->
-            <section class="py-3 px-3">
+            <div id="experiencia" class="mb-5" style="height: 1rem;"> </div>
+            <section id="experiencia-sec" class="container shadow bg-body-tertiary rounded px-3 py-3 mt-5">
                 <h3>Experiencia</h3>
+                <hr class="mb-5" />
+
                 <ul class="timeline-with-icons m-3">
-                    <li class="timeline-item mb-5">
+
+                    <li class="timeline-item mb-4">
                         <span class="timeline-icon">
                             <i class="fas fa-rocket text-primary fa-sm fa-fw"></i>
                         </span>
 
                         <h5 class="fw-bold">Gerente de Ingeniería - <i>Mundos Virtuales SpA</i></h5>
-                        <p class="text-muted mb-2 fw-bold">Ene 2021 - actual</p>
-                        <p class="text-muted">
-                            Encargado de planificar y organizar los trabajo de Ingeniería realizados en la empresa. Además de realizar labores comerciales y elaboración de propuestas técnicas.
-                        </p>
-                        <p class="text-muted">
-                            <b>Logros</b>: Proyecto de Control de Calidad en tiempo real con técnicas de Visión Computacional en Agrosuper.
-                        </p>
+                        <p class="text-muted mb-2 fw-bold">Ene 2021 - Actual</p>
+                        <a class="btn btn-outline-primary mb-2" data-bs-toggle="collapse" href="#experiencia1" role="button" aria-expanded="false" aria-controls="experiencia1">Ver más</a>
+                        <div class="collapse" id="experiencia1">
+                            <div class="card card-body">
+                                <p class="text-muted">
+                                    Encargado de planificar y organizar los trabajo de Ingeniería realizados en la empresa. Además de realizar labores comerciales y elaboración de propuestas técnicas.
+                                </p>
+                                <p class="text-muted">
+                                    <b class="fw-bold">Logros</b>: Proyecto de Control de Calidad en tiempo real con técnicas de Visión Computacional en Agrosuper.
+                                </p>
+                            </div>
+                        </div>
                     </li>
 
-                    <li class="timeline-item mb-5">
+                    <li class="timeline-item mb-4">
                         <span class="timeline-icon">
                             <i class="fas fa-rocket text-primary fa-sm fa-fw"></i>
                         </span>
 
                         <h5 class="fw-bold">Ingeniero de Desarrollo - <i>Mundos Virtuales SpA</i></h5>
                         <p class="text-muted mb-2 fw-bold">Ene 2017 - Dic 2021</p>
-                        <p class="text-muted">
-                            Encargado de comunicación industrial y de hardware para los diferentes áreas de desarrollo en la empresa. Parte del equipo de automatización y control encargado del diseño eléctrico y software, además de elaboración de informes de propuestas de proyectos.    
-                        </p>
-                        <p class="text-muted">
-                            <b>Logros</b>: Participar en el equipo de trabajo que diseñó e implementó exitosamente diferentes soluciones de celdas robotizadas en empresas como Wenco, Lucchetti, Technosteel, Cormecánica (Renault), entre otras.
-                        </p>
+                        <a class="btn btn-outline-primary mb-2" data-bs-toggle="collapse" href="#experiencia2" role="button" aria-expanded="false" aria-controls="experiencia2">Ver más</a>
+                        <div class="collapse" id="experiencia2">
+                            <div class="card card-body">
+                                <p class="text-muted">
+                                    Encargado de comunicación industrial y de hardware para los diferentes áreas de desarrollo en la empresa. Parte del equipo de automatización y control encargado del diseño eléctrico y software, además de elaboración de informes de propuestas de proyectos.    
+                                </p>
+                                <p class="text-muted">
+                                    <b class="fw-bold">Logros</b>: Participar en el equipo de trabajo que diseñó e implementó exitosamente diferentes soluciones de celdas robotizadas en empresas como Wenco, Lucchetti, Technosteel, Cormecánica (Renault), entre otras.
+                                </p>
+                            </div>
+                        </div>
                     </li>
 
-                    <li class="timeline-item mb-5">
+                    <li class="timeline-item mb-4">
                         <span class="timeline-icon">
                             <i class="fas fa-rocket text-primary fa-sm fa-fw"></i>
                         </span>
 
                         <h5 class="fw-bold">Ayudante de Investigación Laboratorio Robótica - <i>FCFM UChile</i></h5>
                         <p class="text-muted mb-2 fw-bold">Mar 2013 - Jul 2016</p>
-                        <p class="text-muted">
-                            Programación de módulos de percepción y localización del robot Nao, a cargo del desarrollo de los módulos de comunicación entre robots. El lenguaje de programación utilizado fue C/C++ junto a las herramientas Visual Studio, Git y CMake.
-                        </p>
-                        <p class="text-muted">
-                            <b>Logros</b>: Participar en los 3 últimos años en la competencia internacional RoboCup llevadas a cabo en Brasil, China y Alemania respectivamente. Durante estas versiones de la competencia el equipo resultó ser semifinalista entre 24 prestigiosas universidades de distintos países.
-                        </p>
+                        <a class="btn btn-outline-primary mb-2" data-bs-toggle="collapse" href="#experiencia3" role="button" aria-expanded="false" aria-controls="experiencia3">Ver más</a>
+                        <div class="collapse" id="experiencia3">
+                            <div class="card card-body">
+                                <p class="text-muted">
+                                    Programación de módulos de percepción y localización del robot Nao, a cargo del desarrollo de los módulos de comunicación entre robots. El lenguaje de programación utilizado fue C/C++ junto a las herramientas Visual Studio, Git y CMake.
+                                </p>
+                                <p class="text-muted">
+                                    <b class="fw-bold">Logros</b>: Participar en los 3 últimos años en la competencia internacional RoboCup llevadas a cabo en Brasil, China y Alemania respectivamente. Durante estas versiones de la competencia el equipo resultó ser semifinalista entre 24 prestigiosas universidades de distintos países.
+                                </p>
+                            </div>
+                        </div>
                     </li>
 
-                    <li class="timeline-item mb-5">
+                    <li class="timeline-item mb-4">
                         <span class="timeline-icon">
                             <i class="fas fa-rocket text-primary fa-sm fa-fw"></i>
                         </span>
 
                         <h5 class="fw-bold">Desarrollador Java (Práctica Profesional)- <i>Woodtech</i></h5>
-                        <p class="text-muted mb-2 fw-bold">12 2014 - feb 2015</p>
-                        <p class="text-muted">
-                            Programar diferentes simuladores de hardware para uno de los sis- temas que desarrolla la empresa. Los simuladores se ejecutan de forma paralela y distribuida. El sistema de simulación completo cuenta con 17 dispositivos entre ellos cámaras IP, láseres y un PLC comunicado por el protocolo Modbus.
-                        </p>
-                        <p class="text-muted">
-                            <b>Logros</b>: Familiarización con metodologías ágiles con el software Jira de Atlassian. Desarrollo de un simulador del hardware utilizado en la empresa, el cual ayudó a los analistas a detectar errores en el software principal.
-                        </p>
+                        <p class="text-muted mb-2 fw-bold">Dic 2014 - Feb 2015</p>
+                        <a class="btn btn-outline-primary mb-2" data-bs-toggle="collapse" href="#experiencia4" role="button" aria-expanded="false" aria-controls="experiencia4">Ver más</a>
+                        <div class="collapse" id="experiencia4">
+                            <div class="card card-body">
+                                <p class="text-muted">
+                                    Programar diferentes simuladores de hardware para uno de los sis- temas que desarrolla la empresa. Los simuladores se ejecutan de forma paralela y distribuida. El sistema de simulación completo cuenta con 17 dispositivos entre ellos cámaras IP, láseres y un PLC comunicado por el protocolo Modbus.
+                                </p>
+                                <p class="text-muted">
+                                    <b class="fw-bold">Logros</b>: Familiarización con metodologías ágiles con el software Jira de Atlassian. Desarrollo de un simulador del hardware utilizado en la empresa, el cual ayudó a los analistas a detectar errores en el software principal.
+                                </p>
+                            </div>
+                        </div>
                     </li>
 
-                    <li class="timeline-item mb-5">
+                    <li class="timeline-item mb-4">
                         <span class="timeline-icon">
                             <i class="fas fa-rocket text-primary fa-sm fa-fw"></i>
                         </span>
 
                         <h5 class="fw-bold">Web Developer - <i>Compradescuentos.cl</i></h5>
                         <p class="text-muted mb-2 fw-bold">Oct 2011 - Feb 2013</p>
-                        <p class="text-muted">
-                            Diseño e implementación de un sitio Web de ventas de cupones de descuentos. El sitio se desarrolló con el framework Codeigniter y el lenguaje PHP y la base de datos MySQL.
-                        </p>
-                        <p class="text-muted">
-                            <b>Logros</b>: Automatización del proceso de venta y reserva de horas en el centro estética incrementando la captación de nuevos clientes y optimizando los procesos internos del negocio.
-                        </p>
+                        <a class="btn btn-outline-primary mb-2" data-bs-toggle="collapse" href="#experiencia5" role="button" aria-expanded="false" aria-controls="experiencia5">Ver más</a>
+                        <div class="collapse" id="experiencia5">
+                            <div class="card card-body">
+                                <p class="text-muted">
+                                    Diseño e implementación de un sitio Web de ventas de cupones de descuentos. El sitio se desarrolló con el framework Codeigniter y el lenguaje PHP y la base de datos MySQL.
+                                </p>
+                                <p class="text-muted">
+                                    <b class="fw-bold">Logros</b>: Automatización del proceso de venta y reserva de horas en el centro estética incrementando la captación de nuevos clientes y optimizando los procesos internos del negocio.
+                                </p>
+                            </div>
+                        </div>
                     </li>
 
-                    <li class="timeline-item mb-5">
+                    <li class="timeline-item mb-4">
                         <span class="timeline-icon">
                             <i class="fas fa-rocket text-primary fa-sm fa-fw"></i>
                         </span>
 
                         <h5 class="fw-bold">Encargado de Computación - <i>Colegio American British</i></h5>
                         <p class="text-muted mb-2 fw-bold">Mar 2004 - Feb 2011</p>
-                        <p class="text-muted">
-                            Encargado de entregar soporte a todos los equipos computacionales. Webmaster del sitio web de la sede Alicahue del mismo colegio.
-                        </p>
-                        <p class="text-muted">
-                            <b>Logros</b>: Armar un equipo de robótica en el colegio con alumnos de 7moy 8vo básico.
-                        </p>
+                        <a class="btn btn-outline-primary mb-2" data-bs-toggle="collapse" href="#experiencia6" role="button" aria-expanded="false" aria-controls="experiencia6">Ver más</a>
+                        <div class="collapse" id="experiencia6">
+                            <div class="card card-body">
+                                <p class="text-muted">
+                                    Encargado de entregar soporte a todos los equipos computacionales. Webmaster del sitio web de la sede Alicahue del mismo colegio.
+                                </p>
+                                <p class="text-muted">
+                                    <b class="fw-bold">Logros</b>: Armar un equipo de robótica en el colegio con alumnos de 7mo y 8vo básico.
+                                </p>
+                            </div>
+                        </div>
                     </li>
                     
                 </ul>
             </section>
             <!-- Section: Experiencia -->
 
+
+
             <!-- Section: Educación -->
-            <section class="py-3 px-3 bg-success">
+             <div id="educacion" class="mb-5" style="height: 1rem;"> </div>
+            <section id="educacion-sec" class="container shadow bg-body-tertiary rounded py-3 px-3 mt-5">
                 <h3>Educación</h3>
-                
+                <hr class="mb-5" />
+
+                <ul class="timeline-with-icons m-3">
+                    <li class="timeline-item mb-4">
+                        <span class="timeline-icon">
+                            <i class="fas fa-rocket text-primary fa-sm fa-fw"></i>
+                        </span>
+                        <h5 class="fw-bold">Diplomado de Administración de Empresas</h5>
+                        <p class="text-muted mb-2 fw-bold">Universida Católica de Chile</p>
+                        <p class="text-muted mb-2 fw-bold">(2024)</p>
+                    </li>
+                    <li class="timeline-item mb-4">
+                        <span class="timeline-icon">
+                            <i class="fas fa-rocket text-primary fa-sm fa-fw"></i>
+                        </span>
+                        <h5 class="fw-bold">Ingeniero Civil Electríco</h5>
+                        <p class="text-muted mb-2 fw-bold">Universidad de Chile, FCFM</p>
+                        <p class="text-muted mb-2 fw-bold">(2011 - 2017)</p>
+                    </li>
+                    <li class="timeline-item mb-4">
+                        <span class="timeline-icon">
+                            <i class="fas fa-rocket text-primary fa-sm fa-fw"></i>
+                        </span>
+                        <h5 class="fw-bold">Ingeniero Civil Informático</h5>
+                        <p class="text-muted mb-2 fw-bold">Universidad de Santiago, USACH</p>
+                        <p class="text-muted mb-2 fw-bold">(2002 - 2003)</p>
+                    </li>
+                </ul>
             </section>
             <!-- Section: Educación -->
         </main>
 
-        <footer>
 
+
+        <footer class="text-center bg-body-tertiary shadow rounded-top mt-5">
+            <!-- Grid container -->
+            <div class="container pt-4">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                <!-- Facebook -->
+                <a
+                    data-mdb-ripple-init
+                    class="btn btn-link btn-floating btn-lg text-body m-1"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+                    ><i class="fab fa-facebook-f"></i
+                ></a>
+
+                <!-- Twitter -->
+                <a
+                    data-mdb-ripple-init
+                    class="btn btn-link btn-floating btn-lg text-body m-1"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+                    ><i class="fab fa-twitter"></i
+                ></a>
+
+                <!-- Google -->
+                <a
+                    data-mdb-ripple-init
+                    class="btn btn-link btn-floating btn-lg text-body m-1"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+                    ><i class="fab fa-google"></i
+                ></a>
+
+                <!-- Instagram -->
+                <a
+                    data-mdb-ripple-init
+                    class="btn btn-link btn-floating btn-lg text-body m-1"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+                    ><i class="fab fa-instagram"></i
+                ></a>
+
+                <!-- Linkedin -->
+                <a
+                    data-mdb-ripple-init
+                    class="btn btn-link btn-floating btn-lg text-body m-1"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+                    ><i class="fab fa-linkedin"></i
+                ></a>
+                <!-- Github -->
+                <a
+                    data-mdb-ripple-init
+                    class="btn btn-link btn-floating btn-lg text-body m-1"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+                    ><i class="fab fa-github"></i
+                ></a>
+                </section>
+                <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2025 Copyright:
+                <a class="text-body" href="https://pdoren.github.io">pdoren.github.io</a>
+            </div>
+            <!-- Copyright -->
         </footer>
+
     </div>
     
     <script src="assets/js/index.js" defer></script>
